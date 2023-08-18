@@ -40,3 +40,4 @@ class CarFactory:
         battery = NubbinBattery(last_service_date, current_date)
         car = Car(engine, battery)
         return car
+    
