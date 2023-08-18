@@ -5,4 +5,7 @@ class CarriganTyres(Tyres):
         self.__tyre_wear = tyre_wear
         
     def needs_service(self) -> bool:
-        return sum(self.__tyre_wear) >= 0.9
+        for tire in self.__tyre_wear:
+            if tire >= 0.9:
+                return True
+        return False

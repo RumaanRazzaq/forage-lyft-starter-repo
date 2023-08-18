@@ -4,7 +4,7 @@ from tyres.carrigan_tyres import CarriganTyres
 
 class TestCarrigan(unittest.TestCase):
     def test_tyre_should_be_serviced(self):
-        tyre_wear = [0.1, 0.2, 0.3, 0.4]
+        tyre_wear = [0.1, 0.2, 0.3, 0.9]
         tyres = CarriganTyres(tyre_wear)
         self.assertTrue(tyres.needs_service())
 
